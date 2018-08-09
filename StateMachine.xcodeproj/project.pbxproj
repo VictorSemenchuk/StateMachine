@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAEFDC82211B420D00BCC9FE /* VSTransitionTable.m in Sources */ = {isa = PBXBuildFile; fileRef = DAEFDC81211B420D00BCC9FE /* VSTransitionTable.m */; };
+		DAEFDC85211B4C5D00BCC9FE /* VSStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = DAEFDC84211B4C5D00BCC9FE /* VSStateMachine.m */; };
+		EF5559BF211B31EE004A4EDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5559BE211B31EE004A4EDF /* AppDelegate.m */; };
+		EF5559C2211B31EE004A4EDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5559C1211B31EE004A4EDF /* ViewController.m */; };
+		EF5559C7211B31F2004A4EDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5559C6211B31F2004A4EDF /* Assets.xcassets */; };
+		EF5559CA211B31F2004A4EDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5559C8211B31F2004A4EDF /* LaunchScreen.storyboard */; };
+		EF5559CD211B31F2004A4EDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5559CC211B31F2004A4EDF /* main.m */; };
+		EF5559DA211B36D4004A4EDF /* VSTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5559D9211B36D4004A4EDF /* VSTransition.m */; };
+		EF8EC48B211B76F9006CD6B7 /* StateMachineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8EC48A211B76F9006CD6B7 /* StateMachineTests.m */; };
+		EF8EC499211B7BBA006CD6B7 /* TransitionTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8EC498211B7BBA006CD6B7 /* TransitionTableTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF8EC48D211B76F9006CD6B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF5559B2211B31EE004A4EDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF5559B9211B31EE004A4EDF;
+			remoteInfo = StateMachine;
+		};
+		EF8EC49B211B7BBA006CD6B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF5559B2211B31EE004A4EDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF5559B9211B31EE004A4EDF;
+			remoteInfo = StateMachine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DAEFDC80211B420D00BCC9FE /* VSTransitionTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSTransitionTable.h; sourceTree = "<group>"; };
+		DAEFDC81211B420D00BCC9FE /* VSTransitionTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSTransitionTable.m; sourceTree = "<group>"; };
+		DAEFDC83211B4C5D00BCC9FE /* VSStateMachine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSStateMachine.h; sourceTree = "<group>"; };
+		DAEFDC84211B4C5D00BCC9FE /* VSStateMachine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSStateMachine.m; sourceTree = "<group>"; };
+		EF5559BA211B31EE004A4EDF /* StateMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5559BD211B31EE004A4EDF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF5559BE211B31EE004A4EDF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF5559C0211B31EE004A4EDF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF5559C1211B31EE004A4EDF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF5559C6211B31F2004A4EDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF5559C9211B31F2004A4EDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF5559CB211B31F2004A4EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF5559CC211B31F2004A4EDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF5559D6211B3472004A4EDF /* Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		EF5559D7211B34C8004A4EDF /* State.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		EF5559D8211B36D4004A4EDF /* VSTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSTransition.h; sourceTree = "<group>"; };
+		EF5559D9211B36D4004A4EDF /* VSTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSTransition.m; sourceTree = "<group>"; };
+		EF8EC488211B76F9006CD6B7 /* StateMachineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateMachineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF8EC48A211B76F9006CD6B7 /* StateMachineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StateMachineTests.m; sourceTree = "<group>"; };
+		EF8EC48C211B76F9006CD6B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF8EC496211B7BBA006CD6B7 /* TransitionTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitionTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF8EC498211B7BBA006CD6B7 /* TransitionTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionTableTests.m; sourceTree = "<group>"; };
+		EF8EC49A211B7BBA006CD6B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF5559B7211B31EE004A4EDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF8EC485211B76F9006CD6B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF8EC493211B7BBA006CD6B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAA2ED35211C2AFD00794D6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF5559D8211B36D4004A4EDF /* VSTransition.h */,
+				EF5559D9211B36D4004A4EDF /* VSTransition.m */,
+				DAEFDC80211B420D00BCC9FE /* VSTransitionTable.h */,
+				DAEFDC81211B420D00BCC9FE /* VSTransitionTable.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF5559B1211B31EE004A4EDF = {
+			isa = PBXGroup;
+			children = (
+				EF5559BC211B31EE004A4EDF /* StateMachine */,
+				EF8EC489211B76F9006CD6B7 /* StateMachineTests */,
+				EF8EC497211B7BBA006CD6B7 /* TransitionTableTests */,
+				EF5559BB211B31EE004A4EDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF5559BB211B31EE004A4EDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF5559BA211B31EE004A4EDF /* StateMachine.app */,
+				EF8EC488211B76F9006CD6B7 /* StateMachineTests.xctest */,
+				EF8EC496211B7BBA006CD6B7 /* TransitionTableTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF5559BC211B31EE004A4EDF /* StateMachine */ = {
+			isa = PBXGroup;
+			children = (
+				DAA2ED35211C2AFD00794D6A /* Model */,
+				EF5559D5211B3434004A4EDF /* Helpers */,
+				EF5559D4211B321A004A4EDF /* Controllers */,
+				EF5559D3211B3205004A4EDF /* Support Files */,
+				DAEFDC83211B4C5D00BCC9FE /* VSStateMachine.h */,
+				DAEFDC84211B4C5D00BCC9FE /* VSStateMachine.m */,
+				EF5559CB211B31F2004A4EDF /* Info.plist */,
+			);
+			path = StateMachine;
+			sourceTree = "<group>";
+		};
+		EF5559D3211B3205004A4EDF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF5559BD211B31EE004A4EDF /* AppDelegate.h */,
+				EF5559BE211B31EE004A4EDF /* AppDelegate.m */,
+				EF5559C6211B31F2004A4EDF /* Assets.xcassets */,
+				EF5559C8211B31F2004A4EDF /* LaunchScreen.storyboard */,
+				EF5559CC211B31F2004A4EDF /* main.m */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		EF5559D4211B321A004A4EDF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF5559C0211B31EE004A4EDF /* ViewController.h */,
+				EF5559C1211B31EE004A4EDF /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EF5559D5211B3434004A4EDF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EF5559D6211B3472004A4EDF /* Event.h */,
+				EF5559D7211B34C8004A4EDF /* State.h */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EF8EC489211B76F9006CD6B7 /* StateMachineTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF8EC48A211B76F9006CD6B7 /* StateMachineTests.m */,
+				EF8EC48C211B76F9006CD6B7 /* Info.plist */,
+			);
+			path = StateMachineTests;
+			sourceTree = "<group>";
+		};
+		EF8EC497211B7BBA006CD6B7 /* TransitionTableTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF8EC498211B7BBA006CD6B7 /* TransitionTableTests.m */,
+				EF8EC49A211B7BBA006CD6B7 /* Info.plist */,
+			);
+			path = TransitionTableTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF5559B9211B31EE004A4EDF /* StateMachine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF5559D0211B31F2004A4EDF /* Build configuration list for PBXNativeTarget "StateMachine" */;
+			buildPhases = (
+				EF5559B6211B31EE004A4EDF /* Sources */,
+				EF5559B7211B31EE004A4EDF /* Frameworks */,
+				EF5559B8211B31EE004A4EDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StateMachine;
+			productName = StateMachine;
+			productReference = EF5559BA211B31EE004A4EDF /* StateMachine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF8EC487211B76F9006CD6B7 /* StateMachineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF8EC491211B76F9006CD6B7 /* Build configuration list for PBXNativeTarget "StateMachineTests" */;
+			buildPhases = (
+				EF8EC484211B76F9006CD6B7 /* Sources */,
+				EF8EC485211B76F9006CD6B7 /* Frameworks */,
+				EF8EC486211B76F9006CD6B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF8EC48E211B76F9006CD6B7 /* PBXTargetDependency */,
+			);
+			name = StateMachineTests;
+			productName = StateMachineTests;
+			productReference = EF8EC488211B76F9006CD6B7 /* StateMachineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF8EC495211B7BBA006CD6B7 /* TransitionTableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF8EC49D211B7BBA006CD6B7 /* Build configuration list for PBXNativeTarget "TransitionTableTests" */;
+			buildPhases = (
+				EF8EC492211B7BBA006CD6B7 /* Sources */,
+				EF8EC493211B7BBA006CD6B7 /* Frameworks */,
+				EF8EC494211B7BBA006CD6B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF8EC49C211B7BBA006CD6B7 /* PBXTargetDependency */,
+			);
+			name = TransitionTableTests;
+			productName = TransitionTableTests;
+			productReference = EF8EC496211B7BBA006CD6B7 /* TransitionTableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF5559B2211B31EE004A4EDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Victor Semenchuk";
+				TargetAttributes = {
+					EF5559B9211B31EE004A4EDF = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					EF8EC487211B76F9006CD6B7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = EF5559B9211B31EE004A4EDF;
+					};
+					EF8EC495211B7BBA006CD6B7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = EF5559B9211B31EE004A4EDF;
+					};
+				};
+			};
+			buildConfigurationList = EF5559B5211B31EE004A4EDF /* Build configuration list for PBXProject "StateMachine" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF5559B1211B31EE004A4EDF;
+			productRefGroup = EF5559BB211B31EE004A4EDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF5559B9211B31EE004A4EDF /* StateMachine */,
+				EF8EC487211B76F9006CD6B7 /* StateMachineTests */,
+				EF8EC495211B7BBA006CD6B7 /* TransitionTableTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF5559B8211B31EE004A4EDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5559CA211B31F2004A4EDF /* LaunchScreen.storyboard in Resources */,
+				EF5559C7211B31F2004A4EDF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF8EC486211B76F9006CD6B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF8EC494211B7BBA006CD6B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF5559B6211B31EE004A4EDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5559C2211B31EE004A4EDF /* ViewController.m in Sources */,
+				DAEFDC82211B420D00BCC9FE /* VSTransitionTable.m in Sources */,
+				EF5559DA211B36D4004A4EDF /* VSTransition.m in Sources */,
+				EF5559CD211B31F2004A4EDF /* main.m in Sources */,
+				EF5559BF211B31EE004A4EDF /* AppDelegate.m in Sources */,
+				DAEFDC85211B4C5D00BCC9FE /* VSStateMachine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF8EC484211B76F9006CD6B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF8EC48B211B76F9006CD6B7 /* StateMachineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF8EC492211B7BBA006CD6B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF8EC499211B7BBA006CD6B7 /* TransitionTableTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF8EC48E211B76F9006CD6B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF5559B9211B31EE004A4EDF /* StateMachine */;
+			targetProxy = EF8EC48D211B76F9006CD6B7 /* PBXContainerItemProxy */;
+		};
+		EF8EC49C211B7BBA006CD6B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF5559B9211B31EE004A4EDF /* StateMachine */;
+			targetProxy = EF8EC49B211B7BBA006CD6B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF5559C8211B31F2004A4EDF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF5559C9211B31F2004A4EDF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF5559CE211B31F2004A4EDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF5559CF211B31F2004A4EDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF5559D1211B31F2004A4EDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5M3HNT6J9D;
+				INFOPLIST_FILE = StateMachine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vicmac.StateMachine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF5559D2211B31F2004A4EDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5M3HNT6J9D;
+				INFOPLIST_FILE = StateMachine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vicmac.StateMachine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF8EC48F211B76F9006CD6B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5M3HNT6J9D;
+				INFOPLIST_FILE = StateMachineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vicmac.StateMachineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StateMachine.app/StateMachine";
+			};
+			name = Debug;
+		};
+		EF8EC490211B76F9006CD6B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5M3HNT6J9D;
+				INFOPLIST_FILE = StateMachineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vicmac.StateMachineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StateMachine.app/StateMachine";
+			};
+			name = Release;
+		};
+		EF8EC49E211B7BBA006CD6B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5M3HNT6J9D;
+				INFOPLIST_FILE = TransitionTableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vicmac.TransitionTableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StateMachine.app/StateMachine";
+			};
+			name = Debug;
+		};
+		EF8EC49F211B7BBA006CD6B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5M3HNT6J9D;
+				INFOPLIST_FILE = TransitionTableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vicmac.TransitionTableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StateMachine.app/StateMachine";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF5559B5211B31EE004A4EDF /* Build configuration list for PBXProject "StateMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF5559CE211B31F2004A4EDF /* Debug */,
+				EF5559CF211B31F2004A4EDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF5559D0211B31F2004A4EDF /* Build configuration list for PBXNativeTarget "StateMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF5559D1211B31F2004A4EDF /* Debug */,
+				EF5559D2211B31F2004A4EDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF8EC491211B76F9006CD6B7 /* Build configuration list for PBXNativeTarget "StateMachineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF8EC48F211B76F9006CD6B7 /* Debug */,
+				EF8EC490211B76F9006CD6B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF8EC49D211B7BBA006CD6B7 /* Build configuration list for PBXNativeTarget "TransitionTableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF8EC49E211B7BBA006CD6B7 /* Debug */,
+				EF8EC49F211B7BBA006CD6B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF5559B2211B31EE004A4EDF /* Project object */;
+}
