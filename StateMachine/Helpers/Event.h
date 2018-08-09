@@ -19,9 +19,7 @@ typedef enum {
     event7,
     event8,
     event9,
-    event10,
-    event11,
-    undefinedEvent
+    event10
 } Event;
 
 #endif /* Events_h */

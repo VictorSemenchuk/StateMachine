@@ -11,7 +11,7 @@
 
 @interface VSStateMachine : NSObject
 
-@property (assign, nonatomic) State lastState;
+@property (assign, nonatomic, readonly) State lastState;
 
 - (instancetype)initWithState:(State)state;
 - (State)performEvent:(Event)event;

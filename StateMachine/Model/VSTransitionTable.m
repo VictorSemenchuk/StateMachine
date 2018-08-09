@@ -19,7 +19,7 @@
 }
 
 - (State)nextStateForState:(State)state andEvent:(Event)event {
-    State nextState = undefinedState;
+    State nextState = state;
     for(VSTransition *transition in self.transitions) {
         if (transition.state == state && transition.event == event) {
             nextState = transition.nextState;

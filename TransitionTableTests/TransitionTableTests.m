@@ -11,6 +11,7 @@
 
 @interface TransitionTableTests : XCTestCase
 
+@property (assign, nonatomic) State initialState;
 @property (nonatomic) VSTransitionTable *transitionTable;
 
 @end
@@ -19,6 +20,7 @@
 
 - (void)setUp {
     [super setUp];
+    self.initialState = state3;
     self.transitionTable = [[VSTransitionTable alloc] initWithArray:@[[VSTransition transitionWithState:state1 event:event1 andNextState:state2],
                                                                       [VSTransition transitionWithState:state2 event:event2 andNextState:state3],
                                                                       [VSTransition transitionWithState:state3 event:event3 andNextState:state4],
@@ -28,12 +30,12 @@
                                                                       [VSTransition transitionWithState:state6 event:event6 andNextState:state7],
                                                                       [VSTransition transitionWithState:state7 event:event7 andNextState:state8],
                                                                       [VSTransition transitionWithState:state8 event:event8 andNextState:state9],
-                                                                      [VSTransition transitionWithState:state7 event:event9 andNextState:state9],
+                                                                      [VSTransition transitionWithState:state7 event:event8 andNextState:state9],
                                                                       [VSTransition transitionWithState:state1 event:event9 andNextState:state10],
                                                                       [VSTransition transitionWithState:state3 event:event9 andNextState:state10],
                                                                       [VSTransition transitionWithState:state4 event:event9 andNextState:state10],
                                                                       [VSTransition transitionWithState:state5 event:event9 andNextState:state10],
-                                                                      [VSTransition transitionWithState:state10 event:event11 andNextState:state9]]];
+                                                                      [VSTransition transitionWithState:state10 event:event8 andNextState:state9]]];
 }
 
 - (void)tearDown {
@@ -41,14 +43,14 @@
     [super tearDown];
 }
 
-- (void)testNextStateFeatureIsTrue {
+- (void)test_nextStateForState_success {
     State nextState = [self.transitionTable nextStateForState:state3 andEvent:event4];
     XCTAssertEqual(nextState, state5);
 }
 
-- (void)testNextStateFeatureIsFalse {
+- (void)test_nextStateForState_failure {
     State nextState = [self.transitionTable nextStateForState:state3 andEvent:event10];
-    XCTAssertEqual(nextState, undefinedState);
+    XCTAssertEqual(nextState, self.initialState);
 }
 
 @end

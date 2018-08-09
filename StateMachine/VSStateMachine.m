@@ -11,6 +11,7 @@
 
 @interface VSStateMachine ()
 
+@property (assign, nonatomic, readwrite) State lastState;
 @property (nonatomic) VSTransitionTable *transitionTable;
 
 @end

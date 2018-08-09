@@ -19,8 +19,7 @@ typedef enum {
     state7,
     state8,
     state9,
-    state10,
-    undefinedState
+    state10
 } State;
 
 #endif /* State_h */
