@@ -154,7 +154,7 @@
     [self.stateMachine performEvent:event2];
     [self.stateMachine performEvent:event4];
     [self.stateMachine performEvent:event5];
-    [self.stateMachine performEvent:event8];
+    [self.stateMachine performEvent:event9];
     [self.stateMachine performEvent:event7];
     State currentState = [self.stateMachine performEvent:event8];
     XCTAssertNotEqual(currentState, state9);
